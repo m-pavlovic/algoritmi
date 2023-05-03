@@ -133,4 +133,14 @@ public class CLL<E> implements SLL<E> {
             System.out.println("List is empty");
         }
     }
+
+    public E getFirst() {
+        E element = null;
+        if (isEmpty()) {
+            System.out.println("List is empty");
+        } else {
+            element = tail.getNext().getElement();
+        }
+        return element;
+    }
 }
